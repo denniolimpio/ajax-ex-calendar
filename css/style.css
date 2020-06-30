@@ -1,45 +1,48 @@
-/* reset */
+/*  reset */
+
 * {
+
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
 }
 
-body {
 
-  font-size: 60px;
+/* layout  */
 
-  /* background-color: red; */
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100PX;
+}
 
+.container {
+  display: flex;
+  flex-basis: 500px;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.calendario h1 {
+  text-align: center;
+  margin: 25px;
 }
 
 ul {
   list-style: none;
-
 }
-ul li {
-  border: 5px solid black;
-
-  padding: 10px;
+ul li  {
   display: inline-block;
+  width: 100px;
+  text-align: center;
+  border: 1px solid grey;
 }
-#calendar-container {
+/*  classi  */
 
-  width: 600px;
-  margin: auto;
+.festa {
 
-}
-
-.anno {
-  background-color: red;
-}
-
-.mese {
-
-}
-.giorniMese {
-  display: flex;
-  flex-flow: row wrap;
-  flex-basis: calc( 100% / 2);
+  color: red;
 
 }
