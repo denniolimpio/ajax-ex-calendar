@@ -12,31 +12,20 @@
 /* layout  */
 
 .wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100PX;
+  margin-top: 100px;
+  background-color: azure;
+  width: 60%;
+  margin: auto;
 }
 
-.container {
-  display: flex;
-  flex-basis: 500px;
-  flex-flow: column wrap;
-  justify-content: center;
-}
-
-.calendario h1 {
-  text-align: center;
-  margin: 25px;
-}
 
 ul {
   list-style: none;
 }
 ul li  {
+  height: 80px;
+  width: 80px;
   display: inline-block;
-  width: 100px;
-  text-align: center;
   border: 1px solid grey;
 }
 /*  classi  */
@@ -45,4 +34,10 @@ ul li  {
 
   color: red;
 
+}
+#indietro,
+#avanti ,
+ #calendario {
+  display: inline-block;
+  margin: 20px 40px;
 }

@@ -24,9 +24,21 @@
 
     <div class="container">
 
-      <div class=" calendario ">
+      <div id="indietro">
 
-        <h1>  </h1>
+        << indietro
+
+      </div>
+
+      <div id="calendario">
+
+        <h1 data-mese-corrente= "" id="mese-corrente">  </h1>
+      </div>
+
+      <div id="avanti">
+
+         avanti >>
+
       </div>
 
       <ul id="listaGiorni">
@@ -45,7 +57,8 @@
   <!--  mio template -->
   <script id="calendar-template" type="text/x-handlebars-template">
 
-    <li  data-giorno-corrente = " {{ giorno_attr}}" class="giorno"> {{ date }}</li>
+    <li data-current-day="{{ day_attr}}" class="day"> {{ date }}</li>
+
   </script>
 
   <!--  fine mio template -->
